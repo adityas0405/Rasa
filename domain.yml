@@ -1,0 +1,132 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_info
+  - provide_info
+  - affirm
+  - deny
+  - thanks
+
+slots:
+  name:
+    type: text
+    mappings:
+    - type: from_text
+      intent: provide_name
+      role: value
+
+  email:
+    type: text
+    mappings:
+    - type: from_text
+      intent: provide_email
+      role: value
+
+  linkedin:
+    type: text
+    mappings:
+    - type: from_text
+      intent: provide_linkedin
+      role: value
+
+  job_status:
+    type: text
+    mappings:
+    - type: from_text
+      intent: provide_job_status
+      role: value
+
+  job_function:
+    type: text
+    mappings:
+    - type: from_text
+      intent: provide_job_function
+      role: value
+
+  student_status:
+    type: text
+    mappings:
+    - type: from_text
+      intent: provide_student_status
+      role: value
+
+  university:
+    type: text
+    mappings:
+    - type: from_text
+      intent: provide_university
+      role: value
+
+  year:
+    type: text
+    mappings:
+    - type: from_text
+      intent: provide_year
+      role: value
+
+  role_type:
+    type: text
+    mappings:
+    - type: from_text
+      intent: provide_role_type
+      role: value
+
+  experience:
+    type: text
+    mappings:
+    - type: from_text
+      intent: provide_experience
+      role: value
+
+  salary:
+    type: text
+    mappings:
+    - type: from_text
+      intent: provide_salary
+      role: value
+
+
+responses:
+  utter_greet:
+  - text: "Hello! How can I help you?"
+  utter_goodbye:
+  - text: "Goodbye! Have a nice day."
+  utter_ask_name:
+  - text: "What's your name?"
+  utter_ask_email:
+  - text: "What's your email address?"
+  utter_ask_linkedin:
+  - text: "What's your LinkedIn profile URL?"
+  utter_ask_job_status:
+  - text: "Are you employed, unemployed, or a student?"
+  utter_ask_job_function:
+  - text: "What's your job function?"
+  utter_ask_student_status:
+  - text: "What's your student status?"
+  utter_ask_university:
+  - text: "What's the name of your university?"
+  utter_ask_year:
+  - text: "What year are you in?"
+  utter_ask_role_type:
+  - text: "What type of role are you looking for?"
+  utter_ask_experience:
+  - text: "What's your work experience?"
+  utter_ask_salary:
+  - text: "What's your expected salary?"
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_ask_name
+  - utter_ask_email
+  - utter_ask_linkedin
+  - utter_ask_job_status
+  - utter_ask_job_function
+  - utter_ask_student_status
+  - utter_ask_university
+  - utter_ask_year
+  - utter_ask_role_type
+  - utter_ask_experience
+  - utter_ask_salary

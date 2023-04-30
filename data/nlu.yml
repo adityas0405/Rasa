@@ -1,0 +1,76 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hey there
+    - Good morning
+
+- intent: provide_name
+  examples: |
+    - My name is [John](name)
+    - Hi, I'm [Jane](name)
+    - This is [Michael](name) speaking
+
+- intent: provide_email
+  examples: |
+    - My email is [john@example.com](email)
+    - You can reach me at [jane@example.com](email)
+    - This is my email: [michael@example.com](email)
+
+- intent: provide_linkedin
+  examples: |
+    - Here's my LinkedIn profile: [linkedin.com/in/john](linkedin)
+    - You can find me on LinkedIn at [linkedin.com/in/jane](linkedin)
+    - This is my LinkedIn profile: [linkedin.com/in/michael](linkedin)
+
+- intent: provide_job_status
+  examples: |
+    - I'm actively looking for new opportunities
+    - I'm open to new opportunities
+    - I'm not looking for a job
+
+- intent: provide_job_function
+  examples: |
+    - I'm interested in engineering
+    - I'm looking for a role in marketing
+    - I want to work in finance
+
+- intent: provide_student_status
+  examples: |
+    - Yes, I'm a full-time student
+    - No, I'm not currently a student
+
+- intent: provide_university
+  examples: |
+    - I attend Stanford University
+    - I study at Harvard University
+    - My school is UC Berkeley
+
+- intent: provide_year
+  examples: |
+    - I'm a freshman
+    - I'm a sophomore
+    - I'm a junior
+    - I'm a senior
+
+- intent: provide_role_type
+  examples: |
+    - I'm interested in an internship
+    - I'm looking for a full-time role
+    - I'm looking for a part-time role
+
+- intent: provide_experience
+  examples: |
+    - I worked at [Google](company) as a [Software Engineer](role) for 2 years
+    - I have a degree in [Computer Science](major) from [MIT](university)
+
+- intent: provide_salary
+  examples: |
+    - I have a minimum salary requirement of $100,000
+    - I'm open to discussing salary based on the role and equity package
+    - Salary is not my top priority, but I expect fair compensation
+
+

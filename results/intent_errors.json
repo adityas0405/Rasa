@@ -1,0 +1,258 @@
+[
+  {
+    "text": "My name is John",
+    "intent": "provide_name",
+    "intent_prediction": {
+      "name": "ask_name",
+      "confidence": 0.9999535083770752
+    }
+  },
+  {
+    "text": "Hi, I'm Jane",
+    "intent": "provide_name",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9702906608581543
+    }
+  },
+  {
+    "text": "This is Michael speaking",
+    "intent": "provide_name",
+    "intent_prediction": {
+      "name": "ask_email",
+      "confidence": 0.5928608179092407
+    }
+  },
+  {
+    "text": "My email is john@example.com",
+    "intent": "provide_email",
+    "intent_prediction": {
+      "name": "ask_email",
+      "confidence": 0.9998161196708679
+    }
+  },
+  {
+    "text": "You can reach me at jane@example.com",
+    "intent": "provide_email",
+    "intent_prediction": {
+      "name": "ask_name",
+      "confidence": 0.985538125038147
+    }
+  },
+  {
+    "text": "This is my email: michael@example.com",
+    "intent": "provide_email",
+    "intent_prediction": {
+      "name": "ask_email",
+      "confidence": 0.9996604919433594
+    }
+  },
+  {
+    "text": "Here's my LinkedIn profile: linkedin.com/in/john",
+    "intent": "provide_linkedin",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.971115231513977
+    }
+  },
+  {
+    "text": "You can find me on LinkedIn at linkedin.com/in/jane",
+    "intent": "provide_linkedin",
+    "intent_prediction": {
+      "name": "ask_name",
+      "confidence": 0.599657416343689
+    }
+  },
+  {
+    "text": "This is my LinkedIn profile: linkedin.com/in/michael",
+    "intent": "provide_linkedin",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6764755249023438
+    }
+  },
+  {
+    "text": "I'm actively looking for new opportunities",
+    "intent": "provide_job_status",
+    "intent_prediction": {
+      "name": "provide_details",
+      "confidence": 0.9960620999336243
+    }
+  },
+  {
+    "text": "I'm open to new opportunities",
+    "intent": "provide_job_status",
+    "intent_prediction": {
+      "name": "provide_details",
+      "confidence": 0.9888932108879089
+    }
+  },
+  {
+    "text": "I'm not looking for a job",
+    "intent": "provide_job_status",
+    "intent_prediction": {
+      "name": "provide_details",
+      "confidence": 0.8757326602935791
+    }
+  },
+  {
+    "text": "I'm interested in engineering",
+    "intent": "provide_job_function",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9914829134941101
+    }
+  },
+  {
+    "text": "I'm looking for a role in marketing",
+    "intent": "provide_job_function",
+    "intent_prediction": {
+      "name": "provide_details",
+      "confidence": 0.6762871146202087
+    }
+  },
+  {
+    "text": "I want to work in finance",
+    "intent": "provide_job_function",
+    "intent_prediction": {
+      "name": "provide_details",
+      "confidence": 0.9995418787002563
+    }
+  },
+  {
+    "text": "Yes, I'm a full-time student",
+    "intent": "provide_student_status",
+    "intent_prediction": {
+      "name": "provide_details",
+      "confidence": 0.9842255115509033
+    }
+  },
+  {
+    "text": "No, I'm not currently a student",
+    "intent": "provide_student_status",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7719770073890686
+    }
+  },
+  {
+    "text": "I attend Stanford University",
+    "intent": "provide_university",
+    "intent_prediction": {
+      "name": "provide_details",
+      "confidence": 0.9914290308952332
+    }
+  },
+  {
+    "text": "I study at Harvard University",
+    "intent": "provide_university",
+    "intent_prediction": {
+      "name": "provide_details",
+      "confidence": 0.9399049878120422
+    }
+  },
+  {
+    "text": "My school is UC Berkeley",
+    "intent": "provide_university",
+    "intent_prediction": {
+      "name": "ask_email",
+      "confidence": 0.35100263357162476
+    }
+  },
+  {
+    "text": "I'm a freshman",
+    "intent": "provide_year",
+    "intent_prediction": {
+      "name": "provide_details",
+      "confidence": 0.9046421051025391
+    }
+  },
+  {
+    "text": "I'm a sophomore",
+    "intent": "provide_year",
+    "intent_prediction": {
+      "name": "provide_details",
+      "confidence": 0.9786374568939209
+    }
+  },
+  {
+    "text": "I'm a junior",
+    "intent": "provide_year",
+    "intent_prediction": {
+      "name": "provide_details",
+      "confidence": 0.9785183668136597
+    }
+  },
+  {
+    "text": "I'm a senior",
+    "intent": "provide_year",
+    "intent_prediction": {
+      "name": "provide_details",
+      "confidence": 0.9925083518028259
+    }
+  },
+  {
+    "text": "I'm interested in an internship",
+    "intent": "provide_role_type",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9655851721763611
+    }
+  },
+  {
+    "text": "I'm looking for a full-time role",
+    "intent": "provide_role_type",
+    "intent_prediction": {
+      "name": "provide_details",
+      "confidence": 0.8333450555801392
+    }
+  },
+  {
+    "text": "I'm looking for a part-time role",
+    "intent": "provide_role_type",
+    "intent_prediction": {
+      "name": "provide_details",
+      "confidence": 0.9794278144836426
+    }
+  },
+  {
+    "text": "I worked at Google as a Software Engineer for 2 years",
+    "intent": "provide_experience",
+    "intent_prediction": {
+      "name": "provide_details",
+      "confidence": 0.9771161675453186
+    }
+  },
+  {
+    "text": "I have a degree in Computer Science from MIT",
+    "intent": "provide_experience",
+    "intent_prediction": {
+      "name": "provide_details",
+      "confidence": 0.9892375469207764
+    }
+  },
+  {
+    "text": "I have a minimum salary requirement of $100,000",
+    "intent": "provide_salary",
+    "intent_prediction": {
+      "name": "provide_details",
+      "confidence": 0.7930068373680115
+    }
+  },
+  {
+    "text": "I'm open to discussing salary based on the role and equity package",
+    "intent": "provide_salary",
+    "intent_prediction": {
+      "name": "provide_details",
+      "confidence": 0.9917380213737488
+    }
+  },
+  {
+    "text": "Salary is not my top priority, but I expect fair compensation",
+    "intent": "provide_salary",
+    "intent_prediction": {
+      "name": "provide_details",
+      "confidence": 0.9591805934906006
+    }
+  }
+]

@@ -1,0 +1,103 @@
+version: "3.1"
+
+# Greet the user and ask for their name
+stories:
+- story: greet and ask name
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: provide_name
+  - slot_was_set:
+    - name: name
+    - value: "John"
+  - action: utter_ask_email
+
+# Ask for the user's email
+- story: ask email
+  steps:
+  - intent: provide_email
+  - slot_was_set:
+    - name: email
+    - value: "john@example.com"
+  - action: utter_ask_linkedin
+
+# Ask for the user's LinkedIn profile
+- story: ask linkedin
+  steps:
+  - intent: provide_linkedin
+  - slot_was_set:
+    - name: linkedin
+    - value: "linkedin.com/in/john"
+  - action: utter_ask_job_status
+
+# Ask for the user's job status
+- story: ask job status
+  steps:
+  - intent: provide_job_status
+  - slot_was_set:
+    - name: job_status
+    - value: "actively looking for new opportunities"
+  - action: utter_ask_job_function
+
+# Ask for the user's job function
+- story: ask job function
+  steps:
+  - intent: provide_job_function
+  - slot_was_set:
+    - name: job_function
+    - value: "engineering"
+  - action: utter_ask_student_status
+
+# Ask if the user is a student
+- story: ask student status
+  steps:
+  - intent: provide_student_status
+  - slot_was_set:
+    - name: student_status
+    - value: "not currently a student"
+  - action: utter_ask_university
+
+# Ask for the user's university
+- story: ask university
+  steps:
+  - intent: provide_university
+  - slot_was_set:
+    - name: university
+    - value: "Stanford University"
+  - action: utter_ask_year
+
+# Ask for the user's year
+- story: ask year
+  steps:
+  - intent: provide_year
+  - slot_was_set:
+    - name: year
+    - value: "sophomore"
+  - action: utter_ask_role_type
+
+# Ask for the user's role type
+- story: ask role type
+  steps:
+  - intent: provide_role_type
+  - slot_was_set:
+    - name: role_type
+    - value: "full-time role"
+  - action: utter_ask_experience
+
+# Ask for the user's experience
+- story: ask experience
+  steps:
+  - intent: provide_experience
+  - slot_was_set:
+    - name: experience
+    - value: "worked at Google as a Software Engineer for 2 years"
+  - action: utter_ask_salary
+
+# Ask for the user's salary requirements
+- story: ask salary
+  steps:
+  - intent: provide_salary
+  - slot_was_set:
+    - name: salary
+    - value: "minimum salary requirement of $100,000"
+  - action: utter_end_conversation
